@@ -8,12 +8,12 @@ Build and run locally:
 gradle clean jettyRunWar
 ```
 
-Swagger UI at http://localhost:8080/swagger-ui/
+Swagger UI at [http://localhost:8080/swagger-ui/](http://localhost:8080/swagger-ui/)
 
-Api Links:
-* http://localhost:8080/api/calculator/square?input=4
-* http://localhost:8080/api/calculator/squareroot?input=4
-* http://localhost:8080/api/file (GET & POST)
+API engpoints:
+* GET /api/calculator/square?input=4
+* GET /api/calculator/squareroot?input=4
+* GET, POST /api/file
 
 
 ## References
