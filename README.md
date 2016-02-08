@@ -1,6 +1,20 @@
 # rest-calculator
 Rest Service for Calculator using Jersey (JAX-RS) + Swagger
 
+## Steps
+
+Build and run locally:
+```
+gradle clean jettyRunWar
+```
+
+Swagger UI at http://localhost:8080/swagger-ui/
+
+Api Links:
+* http://localhost:8080/api/calculator/square?input=4
+* http://localhost:8080/api/calculator/squareroot?input=4
+* http://localhost:8080/api/file (GET & POST)
+
 
 ## References
 * [Jersey: RESTful Web Services in Java.](https://jersey.java.net/) [github](https://github.com/jersey/jersey/)
