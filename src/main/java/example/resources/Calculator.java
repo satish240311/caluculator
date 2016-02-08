@@ -1,4 +1,7 @@
-package example;
+package example.resources;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -7,10 +10,13 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 @Path("calculator")
+@Api(value = "calculator")
 public class Calculator {
     @GET
     @Path("squareRoot")
     @Produces(MediaType.APPLICATION_JSON)
+    @ApiOperation(value = "Computes square root of input",
+            response = Result.class)
     public Result squareRoot(@QueryParam("input") double input){
         Result result = new Result("Square Root");
         result.setInput(input);
@@ -21,6 +27,8 @@ public class Calculator {
     @GET
     @Path("square")
     @Produces(MediaType.APPLICATION_JSON)
+    @ApiOperation(value = "Computes square of input",
+            response = Result.class)
     public Result square(@QueryParam("input") double input){
         Result result = new Result("Square");
         result.setInput(input);

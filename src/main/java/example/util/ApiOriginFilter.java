@@ -1,4 +1,4 @@
-package example;
+package example.util;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
